@@ -2,8 +2,8 @@ import React from 'react';
 
 const Footer = () => {
     return (
-        <div>
-            <footer className="footer sm:footer-horizontal bg-base-200 text-base-content p-10 bg-black text-white">
+        <div className=''>
+            <footer className="footer sm:footer-horizontal bg-base-200 text-base-content p-10 bg-black text-white px-20 pt-20">
   <aside>
    <h1 className='text-2xl font-bold'>DigiTools</h1>
     <p>
@@ -13,21 +13,21 @@ const Footer = () => {
     </p>
   </aside>
   <nav>
-    <h6 className="footer-title">Product</h6>
+    <h6 className="footer-title font-bold">Product</h6>
     <a className="link link-hover">Features</a>
     <a className="link link-hover">Pricing</a>
     <a className="link link-hover">Templates</a>
     <a className="link link-hover">Integrations</a>
   </nav>
   <nav>
-    <h6 className="footer-title">Company</h6>
+    <h6 className="footer-title font-bold">Company</h6>
     <a className="link link-hover">About us</a>
     <a className="link link-hover">Blog</a>
     <a className="link link-hover">Careers</a>
     <a className="link link-hover">Press</a>
   </nav>
   <nav>
-    <h6 className="footer-title">Resources</h6>
+    <h6 className="footer-title font-bold">Resources</h6>
     <a className="link link-hover">Documentation</a>
     <a className="link link-hover">Help Center</a>
     <a className="link link-hover">Community</a>
@@ -73,7 +73,7 @@ const Footer = () => {
 
 </footer>
 
-<footer className="footer sm:footer-horizontal bg-neutral text-neutral-content items-center p-4 border-white/30">
+<footer className="footer sm:footer-horizontal bg-neutral text-neutral-content items-center p-4 border-white/30 px-20 pt-20">
   <aside className="grid-flow-col items-center">
     
     <p> © {new Date().getFullYear()} Digitools - All right reserved</p>
