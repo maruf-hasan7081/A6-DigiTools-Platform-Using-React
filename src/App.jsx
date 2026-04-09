@@ -1,4 +1,4 @@
-import { Suspense } from 'react'
+import { useEffect, useState } from 'react'
 import './App.css'
 import Banar from './component/Banar/Banar'
 import Banar_2 from './component/Banar/Banar_2'
@@ -9,39 +9,32 @@ import Pricing from './component/Pricing/Pricing'
 import Steps from './component/Steps/Steps'
 import Products from './component/Products/Products'
 
-
-
-
-
-const Fatchdata=async()=>{
+const Fatchdata = async () => {
     const res = await fetch('/data.json')
     return res.json()
-  }
+}
 
 function App() {
 
+    const [data, setData] = useState([])
+    const [cart, setCart] = useState([])
 
-  const datapromise = Fatchdata()
+    useEffect(() => {
+        Fatchdata().then(result => setData(result))
+    }, [])
 
-
-
-  return (
-    <>
-    <Nav />
-    <Banar />
-    <Stat />
-    <Steps />
-    <Suspense  fallback={<span className="loading loading-spinner text-error"></span>
-    }>
-    <Products  datapromise={datapromise} />
-
-    </Suspense>
-    <Pricing />
-    <Banar_2 />
-    <Footer />
-      
-    </>
-  )
+    return (
+        <>
+            <Nav cart={cart} />
+            <Banar />
+            <Stat />
+            <Steps />
+            <Products data={data} cart={cart} setCart={setCart} />
+            <Pricing />
+            <Banar_2 />
+            <Footer />
+        </>
+    )
 }
 
 export default App

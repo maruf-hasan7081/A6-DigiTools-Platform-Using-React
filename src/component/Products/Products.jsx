@@ -1,11 +1,9 @@
-import React, { use, useState } from 'react';
+import React, { useState } from 'react';
 import Card from './Card';
 import Cart from './Cart';
 
-const Products = ({ datapromise }) => {
-    const data = use(datapromise);
+const Products = ({ data, cart, setCart }) => {
     const [selectedTab, setSelectedTab] = useState('Products');
-    const [cart, setCart] = useState([]);
 
     const handleAddToCart = (product) => {
         const exists = cart.find(item => item.id === product.id);
@@ -54,7 +52,6 @@ const Products = ({ datapromise }) => {
                         <Card
                             key={product.id}
                             product={product}
-                            cart={cart}
                             handleAddToCart={handleAddToCart}
                         />
                     ))}
