@@ -5,6 +5,7 @@ import Stat from './component/Banar/Stat'
 import Footer from './component/Footer/Footer'
 import Nav from './component/Navbar/Nav'
 import Pricing from './component/Pricing/Pricing'
+import Steps from './component/Steps/Steps'
 
 function App() {
   
@@ -14,6 +15,7 @@ function App() {
     <Nav />
     <Banar />
     <Stat />
+    <Steps />
     <Pricing />
     <Banar_2 />
     <Footer />
