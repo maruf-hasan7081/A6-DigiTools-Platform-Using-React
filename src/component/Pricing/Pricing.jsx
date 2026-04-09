@@ -3,14 +3,14 @@ import React from 'react';
 const Pricing = () => {
     return (
         <div>
-            <div className='text-center mt-20 mb-10'>
-                <h1 className='text-4xl font-bold'>Simple, Transparent Pricing</h1>
-                <p>Choose the plan that fits your needs. Upgrade or downgrade anytime.</p>
+            <div className='text-center mt-12 md:mt-20 mb-8 md:mb-10 px-4'>
+                <h1 className='text-3xl md:text-4xl font-bold'>Simple, Transparent Pricing</h1>
+                <p className='mt-2 text-sm md:text-base'>Choose the plan that fits your needs. Upgrade or downgrade anytime.</p>
 
             </div>
-            <div className='flex justify-center items-center gap-10 mb-20 px-20'>
-                <div >
-                    <div className="card h-[448px] w-96 bg-base-100 shadow-sm">
+            <div className='flex flex-col lg:flex-row justify-center items-center gap-6 md:gap-8 lg:gap-10 mb-12 md:mb-20 px-4 sm:px-6 md:px-10 lg:px-20 '>
+                <div className='w-full max-w-sm'>
+                    <div className="card h-[448px] w-full bg-base-100 shadow-sm">
                         <div className="card-body flex flex-col">
                             {/* <span className="badge badge-xs badge-warning">Most Popular</span> */}
                             <div className="">
@@ -43,8 +43,8 @@ const Pricing = () => {
                         </div>
                     </div>
                 </div>
-                <div>
-                    <div className="card relative h-[448px] w-96 shadow-sm bg-primary text-white">
+                <div className='w-full max-w-sm'>
+                    <div className="card relative h-[448px] w-full shadow-sm bg-primary text-white">
                         <div className="card-body flex flex-col">
                             <span className="absolute -top-3 left-1/2 -translate-x-1/2 badge badge-warning px-4 py-2 rounded-full">
                                 Most Popular
@@ -88,8 +88,8 @@ const Pricing = () => {
                         </div>
                     </div>
                 </div>
-                <div>
-                    <div className="card h-[448px] w-96 bg-base-100 shadow-sm">
+                <div className='w-full max-w-sm'>
+                    <div className="card h-[448px] w-full bg-base-100 shadow-sm">
                         <div className="card-body flex flex-col">
                             {/* <span className="badge badge-xs badge-warning">Most Popular</span> */}
                             <div className="">
