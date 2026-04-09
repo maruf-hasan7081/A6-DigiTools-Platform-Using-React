@@ -15,7 +15,7 @@ const Steps = () => {
                         <p className='bg-primary rounded-full h-6 w-6'>01</p>
                     </div>
 
-                    <img className="mx-auto mt-20 rounded-full" src="/src/assets/user.png" alt="" />
+                    <img className="mx-auto mt-20 rounded-full" src="/user.png" alt="" />
 
                     <h1 className="mt-4 font-bold text-xl">Create Account</h1>
 
@@ -32,7 +32,7 @@ const Steps = () => {
                         <p className='bg-primary rounded-full h-6 w-6'>02</p>
                     </div>
 
-                    <img className="mx-auto mt-20 rounded-full" src="/src/assets/package.png" alt="" />
+                    <img className="mx-auto mt-20 rounded-full" src="/package.png" alt="" />
 
                     <h1 className="mt-4 font-bold text-xl">Choose Products</h1>
 
@@ -49,7 +49,7 @@ const Steps = () => {
                         <p className='bg-primary rounded-full h-6 w-6'>03</p>
                     </div>
 
-                    <img className="mx-auto mt-20 rounded-full" src="/src/assets/rocket.png" alt="" />
+                    <img className="mx-auto mt-20 rounded-full" src="/rocket.png" alt="" />
 
                     <h1 className="mt-4 font-bold text-xl">Start Creating</h1>
 

@@ -20,7 +20,7 @@ const Banar = () => {
                     <button className='btn btn-primary rounded-2xl w-full sm:w-auto'>Explore Products</button>
 
                     <button className='btn rounded-2xl btn-outline-primary w-full sm:w-auto flex items-center justify-center gap-2'>
-                        <img className='w-5 h-5' src="/src/assets/Play.png" alt="" />
+                        <img className='w-5 h-5' src="/Play.png" alt="" />
                         Watch Demo
                     </button>
                 </div>
@@ -28,7 +28,7 @@ const Banar = () => {
             </div>
 
             <div className='w-full flex justify-center'>
-                <img className='w-full max-w-md lg:max-w-lg' src="/src/assets/banner.png" alt="" />
+                <img className='w-full max-w-md lg:max-w-lg' src="/banner.png" alt="" />
             </div>
 
         </div>
