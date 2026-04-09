@@ -7,7 +7,9 @@ import Footer from './component/Footer/Footer'
 import Nav from './component/Navbar/Nav'
 import Pricing from './component/Pricing/Pricing'
 import Steps from './component/Steps/Steps'
-import Products from './component/Products/Products'
+import Products from './component/Products/Products'   // এটা add করতে হবে
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Fatchdata = async () => {
     const res = await fetch('/data.json')
@@ -15,7 +17,6 @@ const Fatchdata = async () => {
 }
 
 function App() {
-
     const [data, setData] = useState([])
     const [cart, setCart] = useState([])
 
@@ -33,6 +34,7 @@ function App() {
             <Pricing />
             <Banar_2 />
             <Footer />
+            <ToastContainer />
         </>
     )
 }

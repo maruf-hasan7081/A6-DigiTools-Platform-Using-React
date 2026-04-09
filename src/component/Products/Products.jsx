@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Card from './Card';
 import Cart from './Cart';
+import { toast } from 'react-toastify';
 
 const Products = ({ data, cart, setCart }) => {
     const [selectedTab, setSelectedTab] = useState('Products');
@@ -15,6 +16,7 @@ const Products = ({ data, cart, setCart }) => {
 
     const handleRemoveFromCart = (id) => {
         const remainingProducts = cart.filter(item => item.id !== id);
+        toast.error("Product removed from cart!");
         setCart(remainingProducts);
     };
 
